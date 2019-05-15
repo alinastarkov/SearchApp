@@ -37,7 +37,6 @@ class App extends React.Component {
   };
   
   render() {
-    console.log(this.state)
     let content = (this.state.isVideoSearch===true) ? <VideoList videos= {this.state.videos}/> : <ImageList list= {this.state.images}/> 
     return (
       <div className="ui container" style ={{marginTop: "10px"}}>
